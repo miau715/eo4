@@ -1,3 +1,5 @@
+** 此為 Fire.app 製作的 prototype ， 需用 Fire.app Watch **
+
 ## eo4 User Story
 ===
 ### 角色
