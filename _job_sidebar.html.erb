@@ -1,0 +1,15 @@
+      <h4>發布時間</h4>
+      <%= lorem_date("%Y/%m/%d", 2013..2013) %>
+      <h4>預期交件時間</h4>
+      <%= lorem_date("%Y/%m/%d", 2013..2013) %>
+      <h4>標籤</h4>
+      <a href="#" class="label label-info" title="點擊 tag 會列出包含此 tag 的所有工作">程式</a>
+      <a href="#" class="label label-info" title="點擊 tag 會列出包含此 tag 的所有工作">RoR</a>
+      <h4>專案相關人員 <i class="icon-external-link"></i></h4>
+      <ul class="project-member">
+        <% 5.times do %>
+        <li>
+          <a href="#" title="連結到g0v的簽名頁面" target="_blank"><img src="<%= lorem_image("24x24") %>" /> <%= lorem_word %></a>
+        </li>
+        <% end %>
+      </ul>

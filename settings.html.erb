@@ -1,0 +1,36 @@
+<% content_for :header do %>
+  <%= render "header_after_login" %>
+<% end %>
+<div class="well plain clearfix">
+  <h3>設定</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">基本設定</a></li>
+    <li><a href="#">管理專案</a></li>
+  </ul>
+  <div class="form-horizontal">
+    <div class="control-group">
+      <label class="control-label">電子信箱</label>
+      <div class="controls">
+        <input type="text" class="input-large" />
+        <label class="checkbox">
+          <input type="checkbox" /> 關注的專案更新時寄信通知我
+        </label>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">目前參與的專案</label>
+      <div class="controls word">
+        <p>可選擇是否關注整個專案下的工作：</p>
+        <% 10.times do %>
+          <label class="checkbox">
+            <input type="checkbox" /> <%= zh_lorem_words(rand(8)+10) %>
+          </label>
+        <% end %>
+      </div>
+    </div>
+    <div class="form-actions">
+      <a href="#" class="btn btn-primary">更新</a>
+      <a href="#" class="btn">取消</a>
+    </div>
+  </div>
+</div>

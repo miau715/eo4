@@ -1,0 +1,50 @@
+<% content_for :header do %>
+  <%= render "header_after_login" %>
+<% end %>
+<div class="well plain clearfix">
+  <h3>發包工作</h3>
+  <div class="form-horizontal">
+    <div class="control-group">
+      <label class="control-label">工作名稱</label>
+      <div class="controls">
+        <input type="text" class="input-xxlarge" />
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">隸屬專案</label>
+      <div class="controls">
+        <select>
+          <% 10.times do %>
+            <option value=""><%= zh_lorem_words(rand(8)+10) %></option>
+          <% end %>
+        </select>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">標籤</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" />
+        <span class="help-block">可輸入多個標籤，以空白分隔。</span>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">預期交件時間</label>
+      <div class="controls">
+        <input type="text" class="input-medium" placeholder="之後會裝datetimepicker" />
+        <span class="help-block">可不填表示不限制交件時間。</span>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">工作目標與說明</label>
+      <div class="controls">
+        <textarea class="input-xxlarge" rows="10">
+大概要裝 ckeditor 之類的或支援 markdown（比較喜歡後者）
+        </textarea>
+      </div>
+    </div>
+    <div class="form-actions">
+      <a href="#" class="btn btn-primary">發包</a>
+      <a href="#" class="btn">取消</a>
+    </div>
+  </div>
+</div>

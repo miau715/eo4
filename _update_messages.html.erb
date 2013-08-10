@@ -1,0 +1,20 @@
+      <div class="alert alert-info">
+        此工作已由 <a href="#" title="連結到 g0v 簽到資料" target="_blank">李小華 <i class="icon-external-link"></i></a> 於 <%= lorem_date("%Y/%m/%d", 2013..2013) %> 16:23 搶下。
+      </div>
+      <p class="note">
+        （以下是此項工作的討論板，只有專案相關人員可以留言/回覆，用來回報工作進度或討論工作內容。）
+      </p> 
+      <div class="update">
+        <ul>
+          <% 3.times do %>
+            <li class="unit">
+              <ul>
+                <li class="image"><img src="<%= lorem_image("75x75") %>" /></li>
+                <li class="author"><a href="#" title="連結到 g0v 簽到資料" target="_blank"><%= lorem_word %> <i class="icon-external-link"></i></a></li>
+                <li class="date"><%= lorem_date("%Y/%m/%d", 2013..2013) %> 20:38 </li>
+                <li class="message"><%= zh_lorem_paragraphs 2 %></li>
+              </ul>
+            </li>
+          <% end %>
+        </ul>
+      </div>

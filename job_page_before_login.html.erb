@@ -1,0 +1,21 @@
+<div class="well plain clearfix">
+  <h3>工作名稱工作名稱工作名稱工作名稱</h3>
+  <div class="row">
+    <div class="span_main">
+      <p>
+      隸屬專案：
+      <a href="#" title="直接依發案時選擇的專案取得連結" target="_blank"><%= zh_lorem_words(rand(8)+10) %> <i class="icon-external-link"></i></a>
+      </p>
+      <% 3.times do %>
+        <p>
+          <%= zh_lorem_paragraphs 3 %>
+        </p>
+      <% end %>
+      <%= render 'discuss' %>
+    </div>
+    <div class="well span_side">
+      <%= render 'job_sidebar' %>
+    </div>
+  </div>
+
+</div>

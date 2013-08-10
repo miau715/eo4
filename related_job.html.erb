@@ -1,0 +1,43 @@
+<% content_for :header do %>
+  <%= render "header_after_login" %>
+<% end %>
+<div class="well plain clearfix">
+  <h3>我參與的工作</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">我的工作</a></li>
+    <li><a href="#">我發包的</a></li>
+    <li><a href="#">關注中</a></li>
+    <li><a href="#">我已完成</a></li>
+  </ul>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th>工作名稱</th>
+        <th>所屬專案</th>
+        <th>標籤</th>
+        <th>發布日期</th>
+        <th>預期交件</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% (1..8).each do |i| %>
+      <tr>
+        <td class="a-center">
+          <% if i < 7 %>
+            <i class="icon-retweet urgency" title="有更新"></i>
+          <% end %>
+        </td>
+        <td><a href="#"><%= zh_lorem_words(rand(10)+10) %></a></td>
+        <td><a href="#" title="點擊專案會列出此專案的所有工作"><%= zh_lorem_words(rand(8)+10) %></a></td>
+        <td>
+          <a href="#" class="label label-info" title="點擊 tag 會列出包含此 tag 的所有工作">程式</a>
+          <a href="#" class="label label-info" title="點擊 tag 會列出包含此 tag 的所有工作">RoR</a>
+        </td>
+        <td><%= lorem_date("%Y/%m/%d", 2013..2013) %></td>
+        <td><%= lorem_date("%Y/%m/%d", 2013..2013) %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

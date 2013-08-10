@@ -1,0 +1,28 @@
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="/index.html">eo4 人力銀行</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="#">我參與的工作</a></li>
+            <li><a href="#">發包工作</a></li>
+          </ul>
+        </div>
+        <div class="nav-collapse collapse pull-right">
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">王小明 <span class="badge badge-important">6</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <% 6.times do %>
+                  <li><a href="#"><%= zh_lorem_words(rand(10)+10) %></a></li>
+                <% end %>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><i class="icon-cog"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

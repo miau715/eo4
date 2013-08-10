@@ -1,0 +1,54 @@
+<% content_for :header do %>
+  <%= render "header_after_login" %>
+<% end %>
+<div class="well plain clearfix">
+  <h3>工作名稱工作名稱工作名稱工作名稱</h3>
+  <div class="row">
+    <div class="span_main">
+      <p>
+      隸屬專案：
+      <a href="#" title="直接依發案時選擇的專案取得連結" target="_blank"><%= zh_lorem_words(rand(8)+10) %> <i class="icon-external-link"></i></a> 
+      </p>
+      <% 3.times do %>
+        <p>
+          <%= zh_lorem_paragraphs 3 %>
+        </p>
+      <% end %>
+      <%= render 'update_messages' %>
+      <div>
+        <h4>發表更新</h4>
+        <textarea class="full"></textarea>
+      </div>
+      <div class="form-actions">
+        <a href="#" class="btn btn-primary pull-right">送出更新</a>
+      </div>
+      <%= render 'discuss' %>
+    </div>
+    <div class="well span_side">
+      <%= render 'job_sidebar' %>
+      <h4>取消關注此工作</h4>
+      <div class="form-inline">
+        我不想再收到更新 
+        <a href="#" class="btn">取消關注</a>
+        <p class="note">
+          （因預設專案相關人員會是關注狀態故提供取消關注選項）
+        </p>
+      </div>
+      <h4>編輯/變更工作狀態</h4>
+      <div class="btn-group">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+          選擇動作
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">編輯工作內容</a></li>
+          <li><a href="#">工作結束</a></li>
+          <li><a href="#">重新發包</a></li>
+        </ul>
+      </div>
+      <p class="note">
+        （只有專案管理者與發包者可以執行此動作）
+      </p>
+    </div>
+  </div>
+</div>

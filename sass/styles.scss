@@ -1,0 +1,86 @@
+@import "bootstrap/bootstrap";
+@import "font-awesome";
+
+body {
+    padding-top: 60px;
+    background: #f5f4f1;
+}
+
+.label {
+    margin-right: 5px;
+}
+
+.note {
+    color: #aaa;
+}
+
+.well.plain {
+    background: #fff;
+}
+
+.form-horizontal .controls.word {
+    padding-top: 5px;
+}
+
+.a-center, td.a-center, th.a-center {
+    text-align: center;
+}
+
+.urgency {
+    color: #cc0000;
+}
+
+.row {
+    .span_main {
+        width: 620px;
+        textarea.full {
+            width: 605px;
+            height: 200px;
+        }
+    }
+
+    .span_side {
+        width: 220px;
+    }
+}
+
+ul.project-member {
+    list-style: none;
+    margin-left: 0;
+    li {
+        padding-left: 0;
+        margin-bottom: 5px;
+    }
+}
+
+.update {
+    margin-bottom: 40px;
+    ul {
+        list-style: none;
+        margin-left: 0;
+        li {
+            
+            padding-left: 0;
+        }
+    }
+    li.unit {
+        position: relative;
+        min-height: 75px;
+        padding: 10px 0 10px 95px;
+        border-bottom: #ddd 1px solid;
+        li.image {
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+        li.author {
+            margin-bottom: 10px;
+        }
+        li.date {
+            color: #666;
+            position: absolute;
+            top: 10px;
+            right: 0;
+        }
+    }
+}
