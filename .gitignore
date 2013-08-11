@@ -1,6 +1,7 @@
 *.rbc
 *.sassc
 .sass-cache
+.sass-cache/*
 capybara-*.html
 .rspec
 .rvmrc
