@@ -1,4 +1,5 @@
 ** 此為 Fire.app 製作的 prototype ， 需用 Fire.app Watch **
+或可在 (http://miau715.github.io/eo4/index.html)[http://miau715.github.io/eo4/index.html] 直接查看 prototype 頁面。
 
 ## eo4 User Story
 ===
